@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Bank.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center  sm:h-[80vh]">
+
+    
+        <section class="w-4/5 mx-auto">
+            <h1 class="text-7xl font-bol text-center">চল বাপের টাকা খশাই !!!</h1>
+            <section class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16">
+                <div class="bg-green-400 rounded-3xl p-6">
+                    <h1 class="text-4xl text-black font-normal mb-7">জমা :</h1>
+                    <h1 class="text-6xl text-black font-normal">$<span id="depositMeter">00</span></h1>
+                </div>
+                <div class="bg-pink-400 rounded-3xl p-6">
+                    <h1 class="text-4xl text-black font-normal mb-7" >উত্তলন :</h1>
+                    <h1 class="text-6xl text-black font-normal">$<span id="withMeter">00</span></h1>
+                </div>
+                <div class="bg-orange-400 rounded-3xl p-6">
+                    <h1 class="text-4xl text-black font-normal mb-7">বাপের পকেটে আছে :</h1>
+                    <h1 class="text-6xl text-black font-normal">$<span id="balanceMeter">1200</span></h1>
+                </div>
+            </section>
+            <section class="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-14 ">
+                <div class="bg-blue-500 p-16 rounded-3xl">
+                    <h1 class="text-4xl font-normal text-white">চল বাপেরে দেই :</h1>
+                    <input type="number" class="block sm:w-3/5  px-4 text-2xl py-2 mt-8 mb-6 rounded-xl outline-none" id="inputDeposit" placeholder="$ বাপেরে কত দিবা?">
+                    <button class="bg-blue-700 px-20 py-3 text-xl font-semibold rounded-lg text-white" id="depositBtn">ঢালও</button>
+                </div>
+                <div class="bg-purple-500 p-16 rounded-3xl">
+                    <h1 class="text-4xl font-normal text-white">চল বাপের খশাই :</h1>
+                    <input type="number" class="block sm:w-[63%]  px-4 text-2xl py-2 mt-8 mb-6 rounded-xl outline-none" id="inputWith" placeholder="$ বাপের কত খশাই দিবা?">
+                    <button class="bg-blue-700 px-20 py-3 text-xl font-semibold rounded-lg text-white" id="withBtn">তোলও</button>
+                </div>
+
+            </section>
+        </section>
+    
+<script src="../js/bank.js"></script>
+</body>
+ </section>
+</html>
